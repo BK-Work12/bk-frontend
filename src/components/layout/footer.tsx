@@ -45,15 +45,15 @@ export const Footer = () => {
 
           {/* Company */}
           <div className="col-span-1 lg:pl-10 lg:col-span-2">
-            <div className="text-[15.1px] mb-5 font-medium text-[#0A0D11] leading-6" style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >
+            <div className="text-[15.1px] mb-5 font-medium text-[#0A0D11] leading-6" style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }}          >
               Company
             </div>
             <div className="flex flex-col gap-3 text-gray-600">
-              <span className="text-sm cursor-pointer" style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }}  style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >About</span>
-              <span className="text-sm cursor-pointer" style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }}  style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >Security</span>
-              <span className="text-sm cursor-pointer" style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }}  style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >Insights</span>
-              <span className="text-sm cursor-pointer" style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }}  style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >Partnerships</span>
-              <span className="text-sm cursor-pointer" style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }}  style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >Ambassadors</span>
+              <span className="text-sm cursor-pointer"   style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >About</span>
+              <span className="text-sm cursor-pointer"   style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >Security</span>
+              <span className="text-sm cursor-pointer"   style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >Insights</span>
+              <span className="text-sm cursor-pointer"   style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >Partnerships</span>
+              <span className="text-sm cursor-pointer"   style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >Ambassadors</span>
             </div>
           </div>
 
