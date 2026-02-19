@@ -29,6 +29,7 @@ const testimonials: Testimonial[] = [
     description: 'BTC derivative markets reset, altcoin ETFs show resilience, labour market data sprint.',
     maxWidth: 'max-w-94.5',
     mobileHeight: 'h-119.25 dotterBlue234',
+    className: 'bg-dotterBlue234',
   },
   {
     id: 281,
@@ -197,8 +198,8 @@ export default function News() {
                   {/* Image */}
                   <div className={`relative rounded-b-xl ${item.mobileHeight} w-full`}>
                     <div className="relative z-1 pt-5.75 px-6.25 pl-6.5">
-                      <p className="text-2xl font-semibold font-display leading-[90%]">{item.shortTitle}</p>
-                      <h2 className="w-full text-[48px] font-display font-semibold leading-[90%]">{item.title}</h2>
+                      <p className="text-2xl font-semibold font-display leading-[90%] bk-p" style={{ lineHeight: '150%', fontFamily: 'var(--font-manrope)' }}>{item.shortTitle}</p>
+                      <h2 className="w-full text-[21px] font-display font-semibold leading-[90%]" style={{ lineHeight: '150%', fontFamily: 'var(--font-manrope)' }} >{item.title}</h2>
                     </div>
                     <Image
                       src={item.mobileImage || item.image}

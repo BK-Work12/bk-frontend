@@ -69,12 +69,12 @@ export const EraSection = () => {
             </div>
           </div>
           <div className="flex flex-col max-lg:px-10 max-lg:gap-5 lg:flex-row justify-between items-center max-sm:pt-18">
-            <div className="hidden w-full lg:flex gap-12 items-stretch">
+            <div className=" w-full lg:flex gap-12 items-stretch ">
               <div className='flex max-w-146 w-full justify-between items-center gap-5.75 max-lg:gap-0'>
-                <p className="text-[16px] font-display leading-[90%]" style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >
+                <p className="text-[16px] font-display leading-[90%] bk-p" style={{ fontWeight: 400, fontFamily: 'var(--font-manrope)' }} >
                   Create your account today and get started.
                 </p>
-                <Link href={'/sign-up'} className="w-full  max-w-[211px]">
+                <Link href={'/sign-up'} className="hidden lg:flex w-full  max-w-[211px]">
                   <button
                     className="rounded-md h-15.5 px-5 flex items-center justify-center max-w-[211px] w-full font-bold font-ui text-base transition-all duration-300 hover:brightness-110 hover:shadow-lg"
                     style={{
@@ -85,7 +85,7 @@ export const EraSection = () => {
                   </button>
                 </Link>
               </div>
-              <div className="flex items-stretch"><div className="w-0.5 h-full min-h-[80px] bg-[#DDDDDD4D] mx-7"></div></div>
+              <div className="flex items-stretch"><div className="hidden lg:flex w-0.5 h-full min-h-[80px] bg-[#DDDDDD4D] mx-7"></div></div>
               <div className="flex w-full max-lg:gap-8 gap-2.5 flex-col lg:flex-row items-center">
                 <input
                   type="text"

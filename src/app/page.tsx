@@ -134,7 +134,7 @@ export default function Home() {
         <Testimonials />
       </div>
       <Awards />
-      <div className="hidden lg:block">
+      <div className="">
         <News />
       </div>
 
