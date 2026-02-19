@@ -41,8 +41,9 @@ export const HeroSection = () => {
         className="hidden xl:block absolute z-10"
         style={{
           right: '1.4%',
-          top: 'calc(100vh - 528px)', // 393px is the distance from the top of the viewport to the bottom of the iPhone in Figma
-          width: '29%',
+          top: 'calc(100vh - 528px)', // 528px is the distance from the top of the viewport to the bottom of the iPhone in Figma
+          width: '100%',
+          maxWidth: '29%',
         }}
       >
         <Image
