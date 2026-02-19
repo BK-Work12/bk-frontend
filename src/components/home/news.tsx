@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
     description: 'BTC derivative markets reset, altcoin ETFs show resilience, labour market data sprint.',
     maxWidth: 'max-w-94.5',
     mobileHeight: 'h-119.25 dotterBlue234',
-    className: 'bg-dotterBlue234',
+
   },
   {
     id: 281,
