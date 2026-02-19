@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/invest/:id", "destination": "/invest/:id/index.html" },
+    { "source": "/invest/:id/", "destination": "/invest/:id/index.html" }
+  ]
+}

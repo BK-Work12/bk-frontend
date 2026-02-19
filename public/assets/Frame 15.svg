@@ -1,0 +1,14 @@
+<svg width="389" height="61" viewBox="0 0 389 61" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M0 12C0 5.37258 5.37258 0 12 0H377C383.627 0 389 5.37258 389 12V49C389 55.6274 383.627 61 377 61H12C5.37258 61 0 55.6274 0 49V12Z" fill="url(#paint0_linear_2_3)"/>
+<path d="M0 12C0 5.37258 5.37258 0 12 0H377C383.627 0 389 5.37258 389 12V49C389 55.6274 383.627 61 377 61H12C5.37258 61 0 55.6274 0 49V12Z" fill="url(#pattern0_2_3)"/>
+<defs>
+<pattern id="pattern0_2_3" patternContentUnits="objectBoundingBox" width="0.0411311" height="0.262295">
+<use xlink:href="#image0_2_3" transform="scale(0.00128535 0.00819672)"/>
+</pattern>
+<linearGradient id="paint0_linear_2_3" x1="194.5" y1="0" x2="194.5" y2="61" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F5FF1E"/>
+<stop offset="1" stop-color="#42DE33"/>
+</linearGradient>
+<image id="image0_2_3" width="32" height="32" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgSURBVHgB7cAxDQAACAOwBf+e4cHDnjb7UjIBAAAAyg6SAgf7LkUZSAAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

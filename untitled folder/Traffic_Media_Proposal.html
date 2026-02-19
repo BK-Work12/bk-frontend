@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Traffic Acquisition Proposal</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+  :root {
+    --primary: #0f172a;
+    --accent: #3b82f6;
+    --accent-light: #dbeafe;
+    --green: #10b981;
+    --green-bg: #d1fae5;
+    --orange: #f59e0b;
+    --orange-bg: #fef3c7;
+    --gray-50: #f8fafc;
+    --gray-100: #f1f5f9;
+    --gray-200: #e2e8f0;
+    --gray-300: #cbd5e1;
+    --gray-400: #94a3b8;
+    --gray-500: #64748b;
+    --gray-600: #475569;
+    --gray-700: #334155;
+    --gray-800: #1e293b;
+    --gray-900: #0f172a;
+    --white: #ffffff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--gray-50);
+    color: var(--gray-800);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---- HERO ---- */
+  .hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
+    color: white;
+    padding: 60px 0 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(59,130,246,0.12) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(16,185,129,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(59,130,246,0.15);
+    border: 1px solid rgba(59,130,246,0.3);
+    color: #93c5fd;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+  }
+  .hero h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #94a3b8;
+    margin-bottom: 30px;
+  }
+  .hero-meta {
+    display: flex;
+    gap: 30px;
+    font-size: 13px;
+    color: #94a3b8;
+  }
+  .hero-meta span { opacity: 0.85; }
+
+  /* ---- CONTAINER ---- */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  /* ---- SECTIONS ---- */
+  section {
+    padding: 48px 0;
+  }
+  section + section {
+    border-top: 1px solid var(--gray-200);
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--gray-900);
+    margin-bottom: 12px;
+  }
+  .section-subtitle {
+    font-size: 15px;
+    color: var(--gray-500);
+    margin-bottom: 32px;
+    max-width: 640px;
+  }
+
+  /* ---- STAT CARDS (top row) ---- */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .stat-card {
+    background: white;
+    border: 1px solid var(--gray-200);
+    border-radius: 12px;
+    padding: 22px 20px;
+    text-align: center;
+  }
+  .stat-card .stat-value {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--gray-900);
+    line-height: 1.1;
+  }
+  .stat-card .stat-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray-400);
+    margin-top: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* ---- SITE CARDS ---- */
+  .site-card {
+    background: white;
+    border: 1px solid var(--gray-200);
+    border-radius: 14px;
+    padding: 32px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .site-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 4px;
+    height: 100%;
+  }
+  .site-card.blue::before { background: var(--accent); }
+  .site-card.green::before { background: var(--green); }
+  .site-card.purple::before { background: #8b5cf6; }
+
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+  .site-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gray-900);
+  }
+  .site-property {
+    font-size: 13px;
+    color: var(--gray-400);
+    margin-top: 2px;
+  }
+  .live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #dcfce7;
+    color: #16a34a;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+  .live-dot {
+    width: 7px;
+    height: 7px;
+    background: #16a34a;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .metric {
+    background: var(--gray-50);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .metric-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gray-900);
+  }
+  .metric-label {
+    font-size: 11px;
+    color: var(--gray-400);
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .metric-trend {
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+  .metric-trend.up { color: #16a34a; }
+  .metric-trend.neutral { color: var(--gray-400); }
+
+  .geo-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--gray-100);
+  }
+  .geo-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gray-500);
+    white-space: nowrap;
+  }
+  .geo-track {
+    flex: 1;
+    height: 8px;
+    background: var(--gray-100);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .geo-fill {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--accent), #60a5fa);
+  }
+  .geo-pct {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gray-900);
+    white-space: nowrap;
+  }
+
+
+  /* ---- FOOTER ---- */
+  .footer {
+    background: var(--gray-900);
+    color: var(--gray-400);
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 8px;
+  }
+  .footer-brand {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 4px;
+  }
+  .footer-tagline {
+    font-size: 13px;
+    color: var(--gray-500);
+    margin-bottom: 20px;
+  }
+  .footer-legal {
+    font-size: 11px;
+    color: var(--gray-600);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .analytics-img {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--gray-100);
+  }
+  .analytics-img img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  .note {
+    font-size: 13px;
+    color: var(--gray-500);
+    line-height: 1.5;
+  }
+
+  /* ---- PRINT ---- */
+  @media print {
+    body { background: white; }
+    .hero { padding: 40px 0 30px; }
+    section { padding: 30px 0; }
+    .site-card { break-inside: avoid; }
+  }
+
+  @media (max-width: 700px) {
+    .stats-row, .metrics-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero h1 { font-size: 28px; }
+    .hero-meta { flex-direction: column; gap: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Confidential Proposal</div>
+    <h1>Premium Traffic Network</h1>
+    <h2>Traffic Acquisition Proposal</h2>
+    <div class="hero-meta">
+      <span>Prepared: February 10, 2026</span>
+      <span>Classification: Confidential</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ EXECUTIVE SUMMARY ============ -->
+<section>
+  <div class="container">
+    <div class="section-label">Overview</div>
+    <div class="section-title">Executive Summary</div>
+    <div class="section-subtitle">
+      We operate a portfolio of three high-traffic digital properties delivering verified, high-intent U.S.-dominant traffic at scale — backed by live Google Analytics 4 data.
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-value">13.2M+</div>
+        <div class="stat-label">Monthly Active Users</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">484M+</div>
+        <div class="stat-label">Monthly Events</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">6,500+</div>
+        <div class="stat-label">Live Concurrent Users</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">91–98%</div>
+        <div class="stat-label">U.S. Traffic Share</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROPERTIES ============ -->
+<section>
+  <div class="container">
+    <div class="section-label">Network Properties</div>
+    <div class="section-title">Live Performance Data</div>
+    <div class="section-subtitle">All metrics sourced from verified GA4 properties — current, auditable, and available for due diligence.</div>
+
+    <!-- HOT.COM -->
+    <div class="site-card blue">
+      <div class="site-header">
+        <div>
+          <div class="site-name">Hot.com</div>
+          <div class="site-property">Property: AS – GA4</div>
+        </div>
+        <div class="live-badge"><span class="live-dot"></span> 2,073 live</div>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-value">5.9M</div>
+          <div class="metric-label">Active Users</div>
+          <div class="metric-trend up">&#9650; 3.1%</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">297M</div>
+          <div class="metric-label">Events / Mo</div>
+          <div class="metric-trend neutral">—</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">259K</div>
+          <div class="metric-label">Key Events</div>
+          <div class="metric-trend up">&#9650; 2.9%</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">5.9M</div>
+          <div class="metric-label">New Users</div>
+          <div class="metric-trend up">&#9650; 3.7%</div>
+        </div>
+      </div>
+      <div class="geo-bar">
+        <div class="geo-label">U.S. Traffic</div>
+        <div class="geo-track"><div class="geo-fill" style="width:92%"></div></div>
+        <div class="geo-pct">~92%</div>
+      </div>
+      <div class="analytics-img">
+        <img src="hot-analytics.png" alt="Hot.com GA4 Analytics Dashboard">
+      </div>
+    </div>
+
+    <!-- ADULTSEARCH -->
+    <div class="site-card green">
+      <div class="site-header">
+        <div>
+          <div class="site-name">AdultSearch.com</div>
+          <div class="site-property">Property: 88 Search – GA4</div>
+        </div>
+        <div class="live-badge"><span class="live-dot"></span> 1,848 live</div>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-value">571K</div>
+          <div class="metric-label">Weekly Users</div>
+          <div class="metric-trend neutral">~2.3M/mo</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">18M</div>
+          <div class="metric-label">Weekly Events</div>
+          <div class="metric-trend neutral">~72M/mo</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">347K</div>
+          <div class="metric-label">Key Events / Wk</div>
+          <div class="metric-trend neutral">—</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">4.2M</div>
+          <div class="metric-label">Page Views / Wk</div>
+          <div class="metric-trend neutral">~16.8M/mo</div>
+        </div>
+      </div>
+      <div class="geo-bar">
+        <div class="geo-label">U.S. Traffic</div>
+        <div class="geo-track"><div class="geo-fill" style="width:91%; background:linear-gradient(90deg,#10b981,#6ee7b7)"></div></div>
+        <div class="geo-pct">~91%</div>
+      </div>
+      <div class="analytics-img">
+        <img src="adultsearch-analytics.png" alt="AdultSearch.com GA4 Analytics Dashboard">
+      </div>
+    </div>
+
+    <!-- TSESCORTS -->
+    <div class="site-card purple">
+      <div class="site-header">
+        <div>
+          <div class="site-name">TSescorts.com</div>
+          <div class="site-property">GA4 Property</div>
+        </div>
+        <div class="live-badge"><span class="live-dot"></span> 2,612 live</div>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-value">5.0M</div>
+          <div class="metric-label">Active Users</div>
+          <div class="metric-trend neutral">—</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">169M</div>
+          <div class="metric-label">Events / Mo</div>
+          <div class="metric-trend neutral">—</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">9.9K</div>
+          <div class="metric-label">Key Events</div>
+          <div class="metric-trend up">&#9650; 5.7%</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">4.8M</div>
+          <div class="metric-label">New Users</div>
+          <div class="metric-trend neutral">—</div>
+        </div>
+      </div>
+      <div class="geo-bar">
+        <div class="geo-label">U.S. Traffic</div>
+        <div class="geo-track"><div class="geo-fill" style="width:98%; background:linear-gradient(90deg,#8b5cf6,#c4b5fd)"></div></div>
+        <div class="geo-pct">~98%</div>
+      </div>
+      <div class="analytics-img">
+        <img src="tsescorts-analytics.png" alt="TSescorts.com GA4 Analytics Dashboard">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-brand">Premium Traffic Network</div>
+  <div class="footer-tagline">Premium Traffic. Verified Scale. Real Results.</div>
+  <div class="footer-legal">This document contains proprietary and confidential information. Unauthorized distribution is prohibited. &copy; 2026 All rights reserved.</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+# Invest detail pages: serve index.html for /invest/:id/ (avoids 404 on refresh)
+/invest/:id    /invest/:id/index.html   200
+/invest/:id/   /invest/:id/index.html   200
